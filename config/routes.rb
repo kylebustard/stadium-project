@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   devise_for :users
+=======
+>>>>>>> b6aa79ea5bca34981fbe773fc342f159dcdb6d94
   get 'storefront/index'
 
   get 'storefront/show'
