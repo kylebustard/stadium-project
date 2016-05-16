@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
+
   devise_for :users
-=======
->>>>>>> b6aa79ea5bca34981fbe773fc342f159dcdb6d94
+
+  get 'vendor/name'
+
+  resources :products
+
   get 'storefront/index'
 
   get 'storefront/show'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
