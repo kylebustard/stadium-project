@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 
-<<<<<<< HEAD
+gem 'stripe'
+gem 'figaro'
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'devise'
-=======
+gem 'cancancan'
 
->>>>>>> b6aa79ea5bca34981fbe773fc342f159dcdb6d94
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
