@@ -6,6 +6,11 @@ class VendorsController < ApplicationController
   	@vendors = Vendor.all
   end
 
+  def products_by_vendor
+
+
+  end
+
   def edit
 
   end
