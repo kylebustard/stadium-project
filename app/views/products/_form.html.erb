@@ -28,8 +28,12 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :vendor_id %><br>
-    <%= f.number_field :vendor_id %>
+    <strong>Vendor:</strong>
+    <%= f.select(:vendor_id, @vendors.collect {|c| [c.name, c.id]}, { include_blank: "Please select a Vendor"}) %>
+  </div>
+    <div class="field">
+    <strong>Upload Products Image: </strong>
+    <%= f.file_field :image %>
   </div>
   <div class="actions">
     <%= f.submit %>

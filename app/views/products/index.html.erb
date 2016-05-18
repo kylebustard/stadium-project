@@ -2,7 +2,7 @@
 
 <h1>Listing Products</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -18,7 +18,7 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
-        <td><%= product.price %></td>
+        <td><%= number_to_currency product.price %></td>
         <td><%= product.quantity %></td>
         <td><%= product.description %></td>
         <td><%= product.vendor_id %></td>
