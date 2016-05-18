@@ -2,15 +2,7 @@
 
   <%= image_tag @vendor.image.url(:large) %>
 
-   <% @vendor = Vendor.find(params[:vendor_id])%>
-   <% @products = Product.all %>
-   <% @products_by_vendor = [] %>
+<%= @products_by_vendor %>
 
-    <%@products.each do |product| %> 
-   <% if product.vendor.id == params[:vendor_id].to_i %>
-     <% @products_by_vendor.push(product)%>
-     <% end %>
-   <% end %>
-   <%= @products_by_vendor.split %>
 <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
 <%= link_to 'Back', vendors_path %> 
